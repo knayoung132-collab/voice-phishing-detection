@@ -1,7 +1,4 @@
-# voice-phishing-detection
-An NLP pipeline that detects voice phishing calls in real time by combining OpenAI Whisper STT with a custom KoBERT + Lexicon ensemble model, deployed as a Flask web service on Naver Cloud Platform GPU.
-
-🎙️ Voice Phishing Detection — KoBERT + Lexicon Ensemble
+#🎙️ Voice Phishing Detection — KoBERT + Lexicon Ensemble
 Achieved F1 0.80 / ROC-AUC 0.89 on held-out test set (n=303)
 An NLP pipeline that detects voice phishing calls in real time by combining OpenAI Whisper STT with a custom KoBERT + Lexicon ensemble model, deployed as a Flask web service on Naver Cloud Platform GPU.
 
