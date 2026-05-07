@@ -1,4 +1,4 @@
-#  Voice Phishing Detection — KoBERT + Lexicon Ensemble
+# Voice Phishing Detection — KoBERT + Lexicon Ensemble
 
 **F1 0.80 / ROC-AUC 0.89 on held-out test set (n=303)**
 
@@ -7,7 +7,7 @@
 
 ---
 
-## 🏆 Highlights
+## Highlights
 
 - Built **end-to-end pipeline**: Speech → Whisper STT → KoBERT inference → REST API → React frontend
 - Designed **KoBERTWithLexicon**, a custom PyTorch module concatenating KoBERT's CLS embedding with log-odds lexicon features
@@ -55,7 +55,7 @@
           ↓
     [KoBERTWithLexicon]  Context + keyword feature ensemble
           ↓
-    Threshold (0.50) → "Voice Phishing Detected" 🚨
+    Threshold (0.50) → "Voice Phishing Detected"
 
 ---
 
@@ -97,9 +97,8 @@
 
 | Area | What I did |
 |------|------------|
-| **Model** | Designed KoBERTWithLexicon architecture, fine-tuning, threshold tuning |
-| **Data** | Balanced sampling strategy, lexicon feature extraction & normalization |
-| **Evaluation** | Confusion matrix, PR/ROC curves, AUPRC, ROC-AUC analysis |
+| **Model (led)** | Designed KoBERTWithLexicon architecture, fine-tuning, threshold tuning |
+| **Data & Evaluation (shared)** | Balanced sampling, lexicon feature extraction, confusion matrix, PR/ROC analysis |
 | **Backend** | Flask API integration (STT → model inference → JSON response) |
 
 ---
@@ -172,7 +171,7 @@
           ↓
     [KoBERTWithLexicon]  문맥 + 키워드 피처 앙상블
           ↓
-    임계값(0.50) 초과 → "보이스피싱 탐지" 🚨
+    임계값(0.50) 초과 → "보이스피싱 탐지"
 
 ---
 
@@ -214,9 +213,8 @@
 
 | 역할 | 내용 |
 |------|------|
-| **모델** | KoBERTWithLexicon 아키텍처 설계, fine-tuning, 임계값 튜닝 |
-| **데이터** | 균형 샘플링 전략, Lexicon 피처 추출 및 정규화 |
-| **평가** | Confusion Matrix, PR/ROC Curve, AUPRC, ROC-AUC 분석 |
+| **모델 (본인 주도)** | KoBERTWithLexicon 아키텍처 설계, fine-tuning, 임계값 튜닝 |
+| **데이터 · 평가 (팀 공동)** | 균형 샘플링, Lexicon 피처 추출, Confusion Matrix, PR/ROC Curve 분석 |
 | **백엔드** | Flask API 연동 (STT → 모델 추론 → JSON 반환) |
 
 ---
