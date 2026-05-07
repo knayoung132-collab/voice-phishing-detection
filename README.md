@@ -1,4 +1,4 @@
-# 🎙️ Voice Phishing Detection — KoBERT + Lexicon Ensemble
+# Voice Phishing Detection — KoBERT + Lexicon Ensemble
 
 **F1 0.80 / ROC-AUC 0.89 on held-out test set (n=303)**
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 📊 Results
+## Results
 
 | Metric | Score |
 |--------|-------|
@@ -30,7 +30,7 @@
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
     Input Text
       ├── [KoBERT]   CLS token embedding    → 768-dim
@@ -44,7 +44,7 @@
 
 ---
 
-## 🔄 Pipeline
+## Pipeline
 
     Audio File Upload
           ↓
@@ -58,7 +58,7 @@
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 | Split | Size |
 |-------|------|
@@ -72,13 +72,13 @@
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 `Python` `PyTorch` `HuggingFace Transformers` `KoBERT` `OpenAI Whisper` `Scikit-learn` `Flask` `Pandas` `Naver Cloud Platform (GPU)`
 
 ---
 
-## 🔧 Training Config
+## Training Config
 
 | Parameter | Value |
 |-----------|-------|
@@ -92,7 +92,7 @@
 
 ---
 
-## 👩‍💻 My Contributions (4-person team)
+## My Contributions (4-person team)
 
 | Area | What I did |
 |------|------------|
@@ -103,7 +103,7 @@
 
 ---
 
-## 🚧 Limitations & Next Steps
+## Limitations & Next Steps
 
 - Real-time streaming inference not yet implemented
 - Lexicon vocabulary needs periodic updates as phishing scripts evolve
